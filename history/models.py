@@ -17,7 +17,7 @@ class Album(models.Model):
 
 class Song(models.Model):
   title = models.CharField(default="", max_length=100)
-  albums = models.ForeignKey(Album, on_delete=models.CASCADE)
+  album = models.ForeignKey(Album, on_delete=models.CASCADE)
   artist = models.ForeignKey(Artist, on_delete=models.CASCADE)
 
   def __str__(self):

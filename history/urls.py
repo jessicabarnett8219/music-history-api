@@ -6,7 +6,7 @@ from history import views
 router = DefaultRouter()
 router.register('artists', views.ArtistViewSet)
 router.register('albums', views.AlbumViewSet)
-router.register('songs', views.Songs)
+router.register('songs', views.SongViewSet)
 
 urlpatterns = [
   path('', include(router.urls))
